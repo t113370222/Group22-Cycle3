@@ -19,7 +19,7 @@
 • Therefore, a test of proportions is required rather than a t-test (which is for quantitative means).
 4. Assumptions Considered
 To ensure the validity of the two-sample inference, the following assumptions were verified:
-	1.Independence: The samples are assumed to be independent, as students were surveyed individually across different schools.
+  1.Independence: The samples are assumed to be independent, as students were surveyed individually across different schools.
   2.Randomization: The YRBS 2007 dataset uses a multi-stage cluster sampling design, which we treat as a representative random sample of the U.S. high school population.
   3.Large Counts Condition: Both groups have more than 10 "successes" (smokers) and 10 "failures" (non-smokers).
 • Group 1 (Sad): n_1 \hat{p}_1 \ge 10 and n_1(1-\hat{p}_1) \ge 10
