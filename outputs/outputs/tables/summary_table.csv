@@ -1,0 +1,7 @@
+Metric,Group: Sad/Hopeless (1),Group: Not Sad (0)
+Sample Size (n),3854,9320
+Current Cigarette Use Proportion (p),0.2761,0.1618
+Difference in Proportions (p1 - p0),0.1143,-
+95% CI for Difference,"(0.0983, 0.1302)",-
+Z-statistic,15.0536,-
+P-value,0.0000e+00,-
