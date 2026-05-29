@@ -1,0 +1,7 @@
+Metric,Group: Sad (1),Group: Not Sad (0)
+Sample Size (n),4153,9692
+Success Proportion (p),0.0783,0.0898
+Difference (p1 - p0),-0.0115,-
+95% CI,"(-0.0215, -0.0016)",-
+Z-statistic,-2.2096,-
+P-value,2.7135e-02,-
