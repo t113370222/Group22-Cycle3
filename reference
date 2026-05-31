@@ -1,27 +1,29 @@
-1. Variable Coding & Group Definition
-• Group Variable: SadOrHopeless
-• Definition: Whether the student felt so sad or hopeless almost every day for two weeks or more in a row that they stopped doing some usual activities during the past 12 months.
-• Original Coding: 1 = Yes; 2 = No.
-• Recoding Decision: * Group 1 (Success): Original code 1 (Felt sad/hopeless).
-• Group 0 (Failure): Original code 2 (Did not feel sad/hopeless).
-• Data Cleaning: All invalid codes or blank entries were treated as missing values (NaN) and excluded from the calculation.
-2.Response Variable: CurrentCigaretteUse
-• Definition: The number of days the student smoked cigarettes during the past 30 days.
-• Original Coding: 1 = 0 days; 2 = 1 or 2 days; 3 = 3 to 5 days; 4 = 6 to 9 days; 5 = 10 to 19 days; 6 = 20 to 29 days; 7 = All 30 days.
-• Recoding Decision (Binary):
-• Success (1): Original codes 2 through 7 (Currently uses cigarettes).
-• Failure (0): Original code 1 (Does not currently use cigarettes).
-• Data Cleaning: Non-numeric or blank responses were excluded to ensure the reliability of the proportion estimate.
-3. Method Choice
-• Selected Method: Two-Proportion Z-Test.
-• Reasoning: * The research question compares two independent groups (Sad vs. Not Sad).
-• The response variable is categorical/binary (Uses cigarettes: Yes/No) after recoding.
-• Therefore, a test of proportions is required rather than a t-test (which is for quantitative means).
-4. Assumptions Considered
-To ensure the validity of the two-sample inference, the following assumptions were verified:
-  1.Independence: The samples are assumed to be independent, as students were surveyed individually across different schools.
-  2.Randomization: The YRBS 2007 dataset uses a multi-stage cluster sampling design, which we treat as a representative random sample of the U.S. high school population.
-  3.Large Counts Condition: Both groups have more than 10 "successes" (smokers) and 10 "failures" (non-smokers).
-• Group 1 (Sad): n_1 \hat{p}_1 \ge 10 and n_1(1-\hat{p}_1) \ge 10
-• Group 0 (Not Sad): n_0 \hat{p}_0 \ge 10 and n_0(1-\hat{p}_0) \ge 10
-• This justifies the use of the Normal approximation for the Z-test.
+### 1. Variable Coding & Group Definition
+* **Group Variable:** `SadOrHopeless`
+* **Definition:** Whether the student felt so sad or hopeless almost every day for two weeks or more in a row that they stopped doing some usual activities during the past 12 months.
+* **Recoding Decision:** * **Group 1 (Success):** Original code 1 (Felt sad/hopeless).
+  * **Group 0 (Failure):** Original code 2 (Did not feel sad/hopeless).
+* **Data Cleaning:** All invalid codes or blank entries were treated as missing values (NaN) and excluded from the calculation.
+
+### 2. Response Variable (Composite Dual-Behavior)
+To capture complex lifestyle matrices, two composite binary response variables were engineered from the original dataset:
+* **Group A (Healthy Diet):** * **Definition:** Evaluates strict positive health maintenance.
+  * **Recoding (Binary):** Success (1) = Eats carrots AND does not drink soda. Failure (0) = Does not meet both criteria.
+* **Group B (Risk Behavior):** * **Definition:** Evaluates active risk-taking within a traditionally protective environment.
+  * **Recoding (Binary):** Success (1) = Currently uses cigarettes AND participates in a sports team. Failure (0) = Does not meet both criteria.
+* **Data Cleaning:** Non-numeric or blank responses were excluded to ensure the reliability of the proportion estimates.
+
+### 3. Method Choice
+* **Selected Method:** Two-Proportion Z-Test.
+* **Reasoning:** * The research question compares two independent groups (Sad vs. Not Sad).
+  * The response variables are categorical/binary (Success/Failure) after recoding.
+  * Therefore, a test of proportions is required rather than a t-test (which is reserved for quantitative means).
+
+### 4. Assumptions Considered
+To ensure the validity of the two-sample inference, the following assumptions were verified for both Group A and Group B analyses:
+* **Independence:** The samples are assumed to be independent, as students were surveyed individually across different schools.
+* **Randomization:** The YRBS dataset uses a multi-stage cluster sampling design, which we treat as a representative random sample of the U.S. high school population.
+* **Large Counts Condition:** Both groups possess large sample sizes yielding significantly more than 10 "successes" and 10 "failures".
+  * Group 1 (Sad): $n_1\hat{p}_1 \ge 10$ and $n_1(1-\hat{p}_1) \ge 10$
+  * Group 0 (Not Sad): $n_0\hat{p}_0 \ge 10$ and $n_0(1-\hat{p}_0) \ge 10$
+  * *Conclusion:* This mathematically justifies the use of the Normal approximation for the Z-test.
