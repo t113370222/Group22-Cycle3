@@ -53,18 +53,6 @@ According to our data cleaning logic, the original YRBSS data is recoded and com
 
 ---
 
-## 📍 基準值設定 / Benchmark Values
-
-我們根據「行為四象限矩陣圖」中，代表交叉基準線的灰色虛線切點設定基準率：
-The benchmark rates are established based on the intersection points of the baseline grid lines in the Behavioral Four-Quadrant Matrix Plot:
-
-| 評估項目 / Items | 變數代號 / Variable | 基準率 / Benchmark Value |
-| :--- | :--- | :--- |
-| **飲食習慣組合基準率 / Diet Health Benchmark** | $p_{A0}$ | **0.084 (8.4%)** |
-| **風險代償行為基準率 / Risk Behavior Benchmark** | $p_{B0}$ | **0.091 (9.1%)** |
-
----
-
 ## ❓ 研究問題 / Project Questions
 
 ### 📌 1. 健康飲食比例推論 / Proportion Inference (Group A)
