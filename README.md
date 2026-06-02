@@ -52,9 +52,14 @@ We applied the **Two-Proportion Z-Test** for statistical inference to evaluate b
 ### 📌 1. 健康飲食比例差異檢定 / Two-Proportion Z-Test (Group A)
 * **English:** Is the proportion of students maintaining healthy dietary habits (`Group_A_Diet`) significantly different between students who felt sad/hopeless ($p_1$) and those who did not ($p_0$)? 
 * **中文:** 學生維持健康飲食習慣（`Group_A_Diet`）的比例，在「傷心/絕望（$p_1$）」與「不傷心（$p_0$）」兩個獨立群體之間是否具有統計學上的顯著差異？
+
 * **Hypothesis:** $H_0: p_1 = p_0$ vs $H_1: p_1 \neq p_0$
 
 ### 📌 2. 風險代償行為比例差異檢定 / Two-Proportion Z-Test (Group B)
 * **English:** Is the proportion of students exhibiting risk-compensatory behaviors (`Group_B_Behavior`) significantly different between students who felt sad/hopeless ($p_1$) and those who did not ($p_0$)?
 * **中文:** 學生展現風險代償行為（`Group_B_Behavior`）的比例，在「傷心/絕望（$p_1$）」與「不傷心（$p_0$）」兩個獨立群體之間是否具有統計學上的顯著差異？
 * **Hypothesis:** $H_0: p_1 = p_0$ vs $H_1: p_1 \neq p_0$
+
+---
+## Presentation Video link
+https://drive.google.com/file/d/1C__ZIcVm8aRm_ezh8IG6e_Wt-qGKpG6r/view?usp=drive_link
